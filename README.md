@@ -69,7 +69,7 @@ Also I love **Drawing**.
   <a href="mailto:snahasishdey143@gmail.com" target="_blank">
     <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" ></a>
   
-  <a href="https://www.linkedin.com/in/snahasish0914/" target="_blank">
+  <a href="https://www.linkedin.com/in/snahasish-dey-959510328/" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" ></a>
   
   <a href="https://github.com/basic30" target="_blank">
