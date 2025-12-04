@@ -79,7 +79,7 @@ Also I love **Drawing**.
 
 ---
 ## ⚡ GitHub Stats
-<p align="center"> <img src="https://github-readme-stats.vercel.app/api?username=basic30&show_icons=true&theme=tokyonight" height="170" /> <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=basic30&layout=compact&theme=tokyonight" height="170" /> </p>
+<p align="center"> <img src="https://github-readme-stata.vercel.app/api?username=basic30&show_icons=true&theme=tokyonight" height="170" /> <img src="https://github-readme-stata.vercel.app/api/top-langs/?username=basic30&layout=compact&theme=tokyonight" height="170" /> </p>
 
 ---
 
