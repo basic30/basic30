@@ -1,4 +1,4 @@
-# <p align="center">🌟 Hey there, I'm Snahasish Dey! 🌟</p>
+<h1 align="center"> <img align="center" src="https://github.com/7oSkaaa/7oSkaaa/raw/main/Images/about_me.gif?raw=true" style="width:65px; display: inline-block;" data-target="animated-image.originalImage">🌟 Hey there, I'm Snahasish Dey! 🌟</h1>
 <p align="center" dir="auto">
 <b>✨ 2nd Year CSE Student at Guru Nanak Institute of Technology | Frontend Developer | Backend Learner | Tech Explorer ✨</b>
 </p>
@@ -79,7 +79,15 @@ Also I love **Drawing**.
 
 ---
 ## ⚡ GitHub Stats
-<p align="center"> <img src="https://github-readme-stata.vercel.app/api?username=basic30&show_icons=true&theme=tokyonight" height="170" /> <img src="https://github-readme-stata.vercel.app/api/top-langs/?username=basic30&layout=compact&theme=tokyonight" height="170" /> </p>
+<p align="center"> <img src="https://github-readme-stata.vercel.app/api?username=basic30&number_format=short&show_icons=true&rank_icon=github&theme=tokyonight" height="170" />
+&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="https://github-readme-stata.vercel.app/api/top-langs/?username=basic30&layout=compact&theme=tokyonight" height="170" /> </p>
+
+---
+
+<div dir="auto" align="center">
+  <a target="_blank" rel="noopener noreferrer nofollow" href="https://raw.githubusercontent.com/sminerport/snk/output/github-contribution-grid-snake-reverse.svg"><img src="https://raw.githubusercontent.com/sminerport/snk/output/github-contribution-grid-snake-reverse.svg" width="70%" alt="Snake Game" style="max-width: 100%;"></a>
+</div>
 
 ---
 
