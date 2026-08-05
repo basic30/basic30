@@ -1,6 +1,6 @@
 <h1 align="center"> <img align="center" src="https://github.com/7oSkaaa/7oSkaaa/raw/main/Images/about_me.gif?raw=true" style="width:65px; display: inline-block;" data-target="animated-image.originalImage">🌟 Hey there, I'm Snahasish Dey! 🌟</h1>
 <p align="center" dir="auto">
-<b>✨ 2nd Year CSE Student at Guru Nanak Institute of Technology | Frontend Developer | Backend Learner | Tech Explorer ✨</b>
+<b>✨ 3rd Year CSE Student at Guru Nanak Institute of Technology | Frontend Developer | Backend Learner | Tech Explorer ✨</b>
 </p>
 <p align="center"> <img src="https://i.imgur.com/8MupZHY.png" width="300" /> </p>
 <p align="center">
