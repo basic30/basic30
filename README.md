@@ -86,9 +86,9 @@ Also I love **Drawing**.
 <p align="center"> <img src="https://streak-stats.demolab.com/?user=basic30&theme=dark&hide_border=false&background=0D1117&ring=B084FF&fire=FF77D8&currStreakLabel=5DE4FF&sideLabels=B084FF" height="170" /> </p>
 
 ---
-
-<div dir="auto" align="center">
-  <a target="_blank" rel="noopener noreferrer nofollow" href="https://raw.githubusercontent.com/sminerport/snk/output/github-contribution-grid-snake-reverse.svg"><img src="https://raw.githubusercontent.com/sminerport/snk/output/github-contribution-grid-snake-reverse.svg" width="70%" alt="Snake Game" style="max-width: 100%;"></a>
+## 🐍 GitHub Contribution Snak
+<div align="center">
+  <img src="https://raw.githubusercontent.com/basic30/basic30/output/github-contribution-grid-snake.svg" width="100%" alt="GitHub Contribution Snake">
 </div>
 
 ---
