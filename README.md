@@ -83,6 +83,8 @@ Also I love **Drawing**.
 &nbsp;&nbsp;&nbsp;&nbsp;
 <img src="https://github-readme-stata.vercel.app/api/top-langs/?username=basic30&layout=compact&theme=tokyonight" height="170" /> </p>
 
+<p align="center"> <img src="https://streak-stats.demolab.com/?user=basic30&theme=dark&hide_border=false&background=0D1117&ring=B084FF&fire=FF77D8&currStreakLabel=5DE4FF&sideLabels=B084FF" height="170" /> </p>
+
 ---
 
 <div dir="auto" align="center">
