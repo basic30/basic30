@@ -1,0 +1,214 @@
+
+<svg
+  width="620"
+  height="245"
+  viewBox="0 0 620 245"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+
+  <!-- CARD -->
+
+  <rect
+    x="1"
+    y="1"
+    width="618"
+    height="243"
+    rx="6"
+    fill="#0D1117"
+    stroke="#30363D"
+  />
+
+
+  <!-- ========================= -->
+  <!-- VERTICAL SEPARATORS -->
+  <!-- ========================= -->
+
+  <line
+    x1="206"
+    y1="34"
+    x2="206"
+    y2="213"
+    stroke="#8B949E"
+    stroke-width="1"
+  />
+
+  <line
+    x1="413"
+    y1="34"
+    x2="413"
+    y2="213"
+    stroke="#8B949E"
+    stroke-width="1"
+  />
+
+
+  <!-- ========================= -->
+  <!-- LEFT: TOTAL CONTRIBUTIONS -->
+  <!-- ========================= -->
+
+  <text
+    x="103"
+    y="100"
+    text-anchor="middle"
+    fill="#FFFFFF"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="36"
+    font-weight="700"
+  >
+    2,537
+  </text>
+
+  <text
+    x="103"
+    y="145"
+    text-anchor="middle"
+    fill="#B084FF"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="17"
+    font-weight="400"
+  >
+    Total Contributions
+  </text>
+
+  <text
+    x="103"
+    y="183"
+    text-anchor="middle"
+    fill="#AAAAAA"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="14"
+    font-weight="400"
+  >
+    Apr 14, 2021 - Present
+  </text>
+
+
+  <!-- ========================= -->
+  <!-- CENTER: CURRENT STREAK -->
+  <!-- ========================= -->
+
+  <circle
+    cx="310"
+    cy="89"
+    r="50"
+    stroke="#B084FF"
+    stroke-width="7"
+    fill="none"
+  />
+
+
+  <!-- Pink flame -->
+
+  <path
+    d="
+      M310 31
+      C302 38 300 43 304 48
+      C306 50 307 52 307 55
+      C307 58 309 60 312 60
+      C317 60 320 56 320 51
+      C320 45 316 39 310 31
+      Z
+    "
+    fill="#FF77D8"
+  />
+
+  <path
+    d="
+      M310 38
+      C307 43 308 46 311 49
+      C313 51 313 54 311 56
+      C315 55 317 52 316 49
+      C315 45 313 42 310 38
+      Z
+    "
+    fill="#0D1117"
+  />
+
+
+  <!-- Current streak number -->
+
+  <text
+    x="310"
+    y="100"
+    text-anchor="middle"
+    fill="#FFFFFF"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="34"
+    font-weight="700"
+  >
+    1
+  </text>
+
+
+  <!-- Current streak label -->
+
+  <text
+    x="310"
+    y="175"
+    text-anchor="middle"
+    fill="#5DE4FF"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="18"
+    font-weight="700"
+  >
+    Current Streak
+  </text>
+
+
+  <!-- Current date -->
+
+  <text
+    x="310"
+    y="207"
+    text-anchor="middle"
+    fill="#AAAAAA"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="14"
+    font-weight="400"
+  >
+    Aug 19
+  </text>
+
+
+  <!-- ========================= -->
+  <!-- RIGHT: LONGEST STREAK -->
+  <!-- ========================= -->
+
+  <text
+    x="516"
+    y="100"
+    text-anchor="middle"
+    fill="#FFFFFF"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="36"
+    font-weight="700"
+  >
+    42
+  </text>
+
+  <text
+    x="516"
+    y="145"
+    text-anchor="middle"
+    fill="#B084FF"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="17"
+    font-weight="400"
+  >
+    Longest Streak
+  </text>
+
+  <text
+    x="516"
+    y="183"
+    text-anchor="middle"
+    fill="#AAAAAA"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="14"
+    font-weight="400"
+  >
+    Oct 14, 2025 - Nov 24, 2025
+  </text>
+
+</svg>
