@@ -2,7 +2,7 @@
 <p align="center" dir="auto">
 <b>✨ 3rd Year CSE Student at Guru Nanak Institute of Technology | Frontend Developer | Backend Learner | Tech Explorer ✨</b>
 </p>
-<p align="center"> <img src="https://i.imgur.com/8MupZHY.png" width="300" /> </p>
+<p align="center"> <img src="https://i.imgur.com/8MupZHY.png" width="300" /> </p> 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=basic30&style=for-the-badge&color=blue" alt="profile views"/>
   <img src="https://img.shields.io/github/followers/basic30?style=for-the-badge&color=brightgreen" alt="followers"/>
