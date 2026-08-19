@@ -71,50 +71,139 @@ function formatShortDate(dateString) {
 async function githubGraphQL() {
   const today = new Date();
 
-  /*
-   * Start far enough in the past to capture the complete
-   * contribution history available through the calendar.
-   */
-  const from = new Date(Date.UTC(2000, 0, 1));
+  // GitHub allows a maximum of 1 year per
+  // contributionsCollection query.
+  //
+  // We use 364-day chunks to stay safely below
+  // GitHub's one-year limit.
 
-  const response = await fetch("https://api.github.com/graphql", {
-    method: "POST",
+  const allDays = [];
 
-    headers: {
-      Authorization: `Bearer ${TOKEN}`,
-      "Content-Type": "application/json",
-      "User-Agent": "basic30-streak-generator"
-    },
+  let cursor = new Date(Date.UTC(2021, 0, 1));
 
-    body: JSON.stringify({
-      query,
+  while (cursor <= today) {
+    const from = new Date(cursor);
 
-      variables: {
-        login: USERNAME,
-        from: from.toISOString(),
-        to: today.toISOString()
+    const to = new Date(cursor);
+    to.setUTCDate(to.getUTCDate() + 364);
+
+    // Never request beyond today.
+    if (to > today) {
+      to.setTime(today.getTime());
+    }
+
+    console.log(
+      `Fetching ${dateOnly(from)} → ${dateOnly(to)}`
+    );
+
+    const query = `
+      query(
+        $login: String!,
+        $from: DateTime!,
+        $to: DateTime!
+      ) {
+        user(login: $login) {
+          contributionsCollection(
+            from: $from,
+            to: $to
+          ) {
+            contributionCalendar {
+              totalContributions
+
+              weeks {
+                contributionDays {
+                  date
+                  contributionCount
+                }
+              }
+            }
+          }
+        }
       }
-    })
-  });
+    `;
 
-  if (!response.ok) {
-    throw new Error(
-      `GitHub API returned HTTP ${response.status}`
+    const response = await fetch(
+      "https://api.github.com/graphql",
+      {
+        method: "POST",
+
+        headers: {
+          Authorization: `Bearer ${TOKEN}`,
+          "Content-Type": "application/json",
+          "User-Agent": "basic30-streak-generator"
+        },
+
+        body: JSON.stringify({
+          query,
+
+          variables: {
+            login: USERNAME,
+            from: from.toISOString(),
+            to: to.toISOString()
+          }
+        })
+      }
+    );
+
+    if (!response.ok) {
+      throw new Error(
+        `GitHub API returned HTTP ${response.status}`
+      );
+    }
+
+    const result = await response.json();
+
+    if (result.errors) {
+      console.error(result.errors);
+      throw new Error(
+        "GitHub GraphQL request failed."
+      );
+    }
+
+    if (!result.data?.user) {
+      throw new Error(
+        `GitHub user "${USERNAME}" was not found.`
+      );
+    }
+
+    const calendar =
+      result.data.user.contributionsCollection
+        .contributionCalendar;
+
+    for (const week of calendar.weeks) {
+      for (const day of week.contributionDays) {
+        allDays.push(day);
+      }
+    }
+
+    // Move to the next day after this chunk.
+    cursor = new Date(to);
+    cursor.setUTCDate(
+      cursor.getUTCDate() + 1
     );
   }
 
-  const result = await response.json();
+  /*
+   * Remove duplicate dates.
+   *
+   * This protects us if GitHub's calendar alignment
+   * returns an overlapping day between chunks.
+   */
 
-  if (result.errors) {
-    console.error(result.errors);
-    throw new Error("GitHub GraphQL request failed.");
+  const uniqueDays = new Map();
+
+  for (const day of allDays) {
+    uniqueDays.set(day.date, day);
   }
 
-  if (!result.data?.user) {
-    throw new Error(`GitHub user "${USERNAME}" was not found.`);
-  }
-
-  return result.data.user.contributionsCollection.contributionCalendar;
+  return {
+    weeks: [
+      {
+        contributionDays:
+          Array.from(uniqueDays.values())
+      }
+    ]
+  };
 }
 
 
