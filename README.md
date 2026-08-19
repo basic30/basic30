@@ -83,7 +83,7 @@ Also I love **Drawing**.
 &nbsp;&nbsp;&nbsp;&nbsp;
 <img src="https://github-readme-stata.vercel.app/api/top-langs/?username=basic30&layout=compact&theme=tokyonight" height="170" /> </p>
 
-<p align="center"> <img src="https://raw.githubusercontent.com/basic30/basic30/main/streak.svg" width="620" alt="GitHub Streak" /> </p>
+<p align="center"> <img src="https://raw.githubusercontent.com/basic30/basic30/main/streak.svg" width="600" alt="GitHub Streak" /> </p>
 
 ---
 ## 🐍 GitHub Contribution Snak
