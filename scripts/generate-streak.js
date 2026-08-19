@@ -296,36 +296,69 @@ function calculateStats(days) {
    * → Current Streak = 0
    */
 
-  const today = new Date();
-  const todayString = dateOnly(today);
+const today = new Date();
 
-  const contributionMap = new Map(
-    unique.map(day => [
-      day.date,
-      day.contributionCount
-    ])
+today.setUTCHours(0, 0, 0, 0);
+
+const todayString = dateOnly(today);
+
+const contributionMap = new Map(
+  unique.map(day => [
+    day.date,
+    day.contributionCount
+  ])
+);
+
+let currentStreak = 0;
+
+/*
+ * Match GitHub Readme Streak Stats:
+ *
+ * If today has a contribution:
+ *     start from today.
+ *
+ * If today has NO contribution:
+ *     start from yesterday.
+ *
+ * This means an unfinished streak does NOT
+ * immediately become zero.
+ */
+
+let cursor;
+
+if ((contributionMap.get(todayString) || 0) > 0) {
+
+  // Today counts
+  cursor = new Date(today);
+
+} else {
+
+  // Today doesn't count.
+  // Continue from yesterday.
+  cursor = new Date(today);
+
+  cursor.setUTCDate(
+    cursor.getUTCDate() - 1
   );
+}
 
-  let currentStreak = 0;
+while (true) {
 
-  if ((contributionMap.get(todayString) || 0) > 0) {
-    let cursor = utcDate(todayString);
+  const key = dateOnly(cursor);
 
-    while (true) {
-      const key = dateOnly(cursor);
+  const contributions =
+    contributionMap.get(key) || 0;
 
-      if ((contributionMap.get(key) || 0) <= 0) {
-        break;
-      }
-
-      currentStreak++;
-
-      cursor.setUTCDate(
-        cursor.getUTCDate() - 1
-      );
-    }
+  if (contributions <= 0) {
+    break;
   }
 
+  currentStreak++;
+
+  cursor.setUTCDate(
+    cursor.getUTCDate() - 1
+  );
+}
   /*
    * Date shown below Current Streak.
    *
